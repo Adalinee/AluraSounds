@@ -4,15 +4,17 @@
   --rojo-oscuro: #af303f;
   --blanco: #fff;
   --luz: rgb(229, 255, 0);
+  --rosado: #fc1af0e1;
+  --pastel: #fff;
 }
 
 body {
   align-items: center;
   /*azul celeste */ 
-  background: #5a5bf3; 
-  background: -moz-linear-gradient(left, #5a5bf3 0%, #91e7d9 100%); 
-  background: -webkit-linear-gradient(left, #5a5bf3 0%,#91e7d9 100%); 
-  background: linear-gradient(to right, #5a5bf3 0%,#91e7d9 100%);
+  background: var(--rosado); 
+  background: -moz-linear-gradient(left, #fc1af0e1 0%, #fff 100%); 
+  background: -webkit-linear-gradient(left, #fc1af0e1 0%,#fff 100%); 
+  background: linear-gradient(to right, #fc1af0e1 0%,#fff 100%);
 
   display: flex;
   justify-content: center;
@@ -71,4 +73,9 @@ h1 {
 .tecla.active:focus,
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--rojo-oscuro) inset, 1px 1px 10px var(--luz);
+}
+
+footer{
+  margin: 20px;
+  color: #fff;
 }
